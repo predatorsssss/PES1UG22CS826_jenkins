@@ -19,14 +19,14 @@ pipeline {
                 sh './output'
             }
         }
-        stage('Deploy') {
+        stage('Deploy') 
             steps {
                 echo 'deploy'
             }
         }
     }
 
-    post 
+    post {
         failure {
             echo 'Pipeline failed!'
         }
